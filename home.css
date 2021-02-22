@@ -1,0 +1,87 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(90deg, #fcf3cf, #d4e6f1);
+    line-height: 1em;
+    align-content: center;
+}
+
+#title {
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-size: 35px;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    padding: 0;
+}
+
+#div-form {
+    max-width: 50%;
+    background-color: #E8F8F5;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 5px auto;
+    color: rgb(23, 32, 42);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-control label {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input,
+select,
+textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.form-control select {
+    width: 94%;
+}
+
+.form-control input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 90%;
+}
+
+.form-control label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-control label input {
+    display: inline-block;
+    align-items: center;
+    margin-right: 0.625rem;
+    margin-bottom: 0.125rem;
+    min-height: 1.15rem;
+    min-width: 1.15rem;
+}
+
+button {
+    padding: 15px;
+    margin-top: 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #d4e6f1, #fcf3cf);
+    cursor: pointer;
+}
+
+.alt {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 90%;
+}

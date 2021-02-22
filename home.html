@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="div-header">
+        <h1 id="title">freeCodeCamp form</h1>
+        <p id="description">formulario para resolver tus dudas y preguntas</p>
+    </div>
+    <div id="div-form">
+        <form id="survey-form">
+            <div class="form-control">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" title="Enter your name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-control">
+                <label id="email-label">Email</label>
+                <input id="email" type="email" title="Enter your email address" placeholder="Enter your email address"
+                    pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                    required>
+            </div>
+            <div class="form-control">
+                <label id="number-label">Age</label>
+                <input id="number" type="number" title="Enter a number betwen 10 - 99"
+                    placeholder="Enter your age (optional)" min="10" max="99">
+            </div>
+            <div class="form-control">
+                <label>What's your role?</label>
+                <select id="dropdown">
+                    <option selected>- Select role - </option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>Full time learner</option>
+                </select>
+            </div>
+            <div class="form-control alt">
+                <label>Choose your gender</label>
+                <label id="male-label" for="male">
+                    <input id="male" type="radio" name="gender" value="male" checked> Male
+                </label>
+                <label id="female-label" for="female">
+                    <input id="female" type="radio" name="gender" value="female"> Female
+                </label>
+                <label id="other-label" for="other">
+                    <input id="other" type="radio" name="gender" value="other"> Other
+                </label>
+            </div>
+            <div class="form-control alt">
+                <label>What courses do you like the most?</label>
+                <label>
+                    <input id="web" type="checkbox" value="web-development">Web development
+                </label>
+                <label>
+                    <input id="dscience" type="checkbox" value="dscience">Data Science
+                </label>
+                <label>
+                    <input id="js" type="checkbox" value="js">JavaScript
+                </label>
+                <label>
+                    <input id="ia" type="checkbox" value="ia">IA
+                </label>
+            </div>
+            <div class="form-control">
+                <label>Write your opinion</label>
+                <textarea id="opinion" rows="5" cols="50"></textarea>
+            </div>
+            <button id="submit"><strong>Submit</strong></button>
+        </form>
+    </div>
+</body>
+</html>
